@@ -1,0 +1,151 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="manifest" href="manifest.json">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed,#2563eb);
+    overflow:hidden;
+}
+
+.card{
+    width:90%;
+    max-width:850px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    text-align:center;
+    color:white;
+    animation:fadeIn 1s ease;
+}
+
+.logo{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    font-size:1.1rem;
+    margin-bottom:25px;
+    opacity:0.9;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    padding:20px;
+    margin:25px 0;
+}
+
+.info-box h3{
+    margin-bottom:15px;
+}
+
+ul{
+    list-style:none;
+    line-height:2;
+    font-size:1.05rem;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#22c55e;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#16a34a;
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.note{
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="logo">🎓</div>
+
+    <h1>Student Registration Portal</h1>
+
+    <p class="subtitle">
+        Welcome to the official student registration system.
+        Please read the instructions carefully before proceeding.
+    </p>
+
+    <div class="info-box">
+        <h3>Required Documents</h3>
+
+        <ul>
+            <li>✅ Student Full Name</li>
+            <li>✅ Email Address</li>
+            <li>✅ Student ID Number</li>
+            <li>✅ Branch Information</li>
+            <li>✅ Passport Size Photograph</li>
+        </ul>
+    </div>
+
+    <!-- Replace with your Google Form link -->
+    <a href="http://127.0.0.1:5500/googl.html"
+       target="_blank"
+       class="btn">
+       Open Registration Form
+    </a>
+
+    <p class="note">
+        Make sure all information entered in the form is correct before submission.
+    </p>
+
+</div>
+
+</body>
+</html>
+```
